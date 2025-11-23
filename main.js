@@ -575,8 +575,8 @@ class MatrixCalculator {
             const colsSelect = document.getElementById(`cols${matrixName}`);
             
             if (rowsSelect && colsSelect) {
-                rowsSelect.value = Math.min(matrix.length, 5);
-                colsSelect.value = Math.min(matrix[0].length, 5);
+                rowsSelect.value = Math.min(matrix.length, 20);
+                colsSelect.value = Math.min(matrix[0].length, 20);
                 this.updateMatrixSize(matrixName);
                 
                 // 等待DOM更新后填充数据
